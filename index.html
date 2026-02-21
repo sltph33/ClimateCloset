@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Climate Closet</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <div class="brand-row">
+          <img src="logo.svg" alt="Climate Closet logo" class="site-logo" />
+          <p class="eyebrow">London · Daily Forecast</p>
+        </div>
+        <h1>Climate Closet</h1>
+        <p id="currentDate" class="date-line">Loading date...</p>
+        <p class="subtitle">
+          A sharp weather briefing, football-flavoured banter, and outfit picks for men.
+        </p>
+      </header>
+
+      <section class="weather-card" aria-live="polite">
+        <h2>Today's Weather in London</h2>
+        <div id="weatherGraphic" class="weather-graphic" aria-hidden="true">⛅</div>
+        <div id="weatherStatus" class="status">Loading today's forecast...</div>
+      </section>
+
+      <section class="mini-hourly-card" aria-live="polite">
+        <h2>Hourly Forecast</h2>
+        <p class="mini-hourly-caption">Quick view · every 3 hours</p>
+        <div id="miniHourly" class="mini-hourly-list">
+          <span class="mini-hourly-item">Loading...</span>
+        </div>
+      </section>
+
+      <section class="quip-card">
+        <h2>Daily Quip</h2>
+        <p id="dailyQuip">Warming up on the touchline...</p>
+      </section>
+
+      <section class="outfit-grid">
+        <article class="outfit-card">
+          <h3>Business</h3>
+          <svg class="outfit-icon" viewBox="0 0 120 120" role="img" aria-label="Business outfit drawing">
+            <rect x="30" y="20" width="60" height="20" rx="8" class="icon-stroke" />
+            <path d="M35 42 L50 85 H70 L85 42" class="icon-stroke" />
+            <path d="M56 42 L60 62 L64 42" class="icon-accent" />
+          </svg>
+          <p id="businessOutfit">Building your boardroom lineup...</p>
+        </article>
+
+        <article class="outfit-card">
+          <h3>Casual</h3>
+          <svg class="outfit-icon" viewBox="0 0 120 120" role="img" aria-label="Casual outfit drawing">
+            <path d="M30 35 L90 35 L80 80 L40 80 Z" class="icon-stroke" />
+            <path d="M45 80 L40 102 M75 80 L80 102" class="icon-stroke" />
+            <path d="M52 52 L68 52" class="icon-accent" />
+          </svg>
+          <p id="casualOutfit">Picking your weekend formation...</p>
+        </article>
+
+        <article class="outfit-card">
+          <h3>Athletic</h3>
+          <svg class="outfit-icon" viewBox="0 0 120 120" role="img" aria-label="Athletic outfit drawing">
+            <path d="M38 36 Q60 18 82 36 L72 76 H48 Z" class="icon-stroke" />
+            <path d="M48 76 L42 102 M72 76 L78 102" class="icon-stroke" />
+            <circle cx="60" cy="52" r="8" class="icon-accent" />
+          </svg>
+          <p id="athleticOutfit">Setting up your training session...</p>
+        </article>
+      </section>
+
+      <section class="creators-card">
+        <h2>About the Creators</h2>
+        <p class="creators-intro">
+          Climate Closet is built by three young creators who love sport, style, and sharing their ideas.
+        </p>
+        <div class="creators-grid">
+          <article class="creator-profile">
+            <h3>Thomas</h3>
+            <p>
+              Thomas is 12 years old and loves horse riding, especially horse jumping. He has two brothers and no
+              sister, and brings focus and discipline to the team.
+            </p>
+          </article>
+          <article class="creator-profile">
+            <h3>Leo</h3>
+            <p>
+              Leo is football-mad and always following the game. He has one brother and keeps the football vibe strong
+              in Climate Closet.
+            </p>
+          </article>
+          <article class="creator-profile">
+            <h3>Zayan</h3>
+            <p>
+              Zayan also loves football and helps shape the fun, sporty personality of the site with match-day energy.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
