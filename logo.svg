@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 320" role="img" aria-labelledby="logoTitle logoDesc">
+  <title id="logoTitle">Climate Closet logo</title>
+  <desc id="logoDesc">Colorful clustered circles above the words Climate Closet.</desc>
+  <rect width="420" height="320" fill="#d9d9d9"/>
+  <g transform="translate(40,18)">
+    <ellipse cx="170" cy="120" rx="42" ry="26" fill="#8d2ea8"/>
+    <ellipse cx="235" cy="118" rx="44" ry="26" fill="#a91f6f"/>
+    <ellipse cx="300" cy="120" rx="42" ry="26" fill="#2f3b96"/>
+    <ellipse cx="120" cy="92" rx="42" ry="54" fill="#08743d"/>
+    <ellipse cx="174" cy="68" rx="48" ry="58" fill="#e8009a"/>
+    <ellipse cx="238" cy="64" rx="52" ry="60" fill="#0aa95a"/>
+    <ellipse cx="296" cy="72" rx="44" ry="50" fill="#ff6f31"/>
+    <ellipse cx="354" cy="92" rx="46" ry="54" fill="#1f80c4"/>
+    <ellipse cx="205" cy="92" rx="58" ry="28" fill="#eceb32"/>
+    <ellipse cx="265" cy="95" rx="58" ry="28" fill="#caa36a"/>
+    <ellipse cx="242" cy="80" rx="64" ry="72" fill="#c91933"/>
+  </g>
+  <text x="210" y="258" text-anchor="middle" font-size="64" fill="#111" font-family="Brush Script MT, Segoe Script, Comic Sans MS, cursive">Climate Closet</text>
+</svg>

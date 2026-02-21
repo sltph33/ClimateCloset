@@ -1,0 +1,222 @@
+:root {
+  color-scheme: dark;
+  --bg: #050505;
+  --surface-border: #2e2e2e;
+  --text-primary: #f4f4f4;
+  --text-secondary: #b2b2b2;
+  --accent: #33d6ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-primary);
+  background: radial-gradient(circle at top right, #1a1a1a 0%, var(--bg) 55%);
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
+
+.hero {
+  margin-bottom: 1.5rem;
+}
+
+
+.brand-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 0.2rem;
+}
+
+.site-logo {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #2d2d2d;
+  background: #d9d9d9;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  font-size: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+}
+
+.date-line {
+  margin: 0.55rem 0 0;
+  color: #d8f5ff;
+  font-weight: 600;
+}
+
+.subtitle {
+  margin: 0.7rem 0 0;
+  color: var(--text-secondary);
+  max-width: 60ch;
+}
+
+.weather-card,
+.mini-hourly-card,
+.quip-card,
+.outfit-card,
+.creators-card {
+  background: rgba(18, 18, 18, 0.9);
+  border: 1px solid var(--surface-border);
+  border-radius: 16px;
+  padding: 1.1rem 1.2rem;
+  backdrop-filter: blur(4px);
+}
+
+.weather-card,
+.mini-hourly-card,
+.quip-card,
+.creators-card {
+  margin-bottom: 1rem;
+}
+
+h2,
+h3 {
+  margin-top: 0;
+}
+
+.weather-graphic {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.status {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.mini-hourly-caption {
+  margin: -0.2rem 0 0.7rem;
+  color: var(--text-secondary);
+  font-size: 0.86rem;
+}
+
+.mini-hourly-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+  gap: 0.5rem;
+}
+
+.mini-hourly-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  border: 1px solid #303030;
+  border-radius: 10px;
+  padding: 0.5rem 0.35rem;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.mini-hourly-time {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.mini-hourly-temp {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.quip-card p,
+.outfit-card p {
+  color: var(--text-secondary);
+  margin-bottom: 0;
+  line-height: 1.6;
+}
+
+.outfit-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.outfit-icon {
+  width: 62px;
+  height: 62px;
+  display: block;
+  margin: 0.2rem 0 0.6rem;
+}
+
+.icon-stroke {
+  fill: none;
+  stroke: #f1f1f1;
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.icon-accent {
+  fill: none;
+  stroke: var(--accent);
+  stroke-width: 4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 1.25rem 0.8rem 2rem;
+  }
+
+  .site-logo {
+    width: 92px;
+  }
+
+  .brand-row {
+    align-items: center;
+  }
+}
+
+
+.creators-intro {
+  color: var(--text-secondary);
+  margin: -0.25rem 0 0.85rem;
+}
+
+.creators-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.creator-profile {
+  border: 1px solid #303030;
+  border-radius: 12px;
+  padding: 0.8rem 0.9rem;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.creator-profile h3 {
+  margin-bottom: 0.4rem;
+}
+
+.creator-profile p {
+  margin: 0;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
